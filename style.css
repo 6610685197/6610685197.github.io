@@ -159,7 +159,22 @@ body {
     line-height: 35px;
 }
 
+.about-me-list {
+    font-family: serif;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
 .small-image {
+    width: 30px;
+    height: 30px;
+    gap: 7px;
+    display: flex;
+}
+
+.small-image-gif {
+    margin-left: 20px;
     width: 30px;
     height: 30px;
     gap: 7px;
@@ -174,7 +189,7 @@ body {
 
 @keyframes text-appear {
     from {
-        opacity: 0;
+        opacity: 0.4;
         translate: 0 8rem;
     }
 }
