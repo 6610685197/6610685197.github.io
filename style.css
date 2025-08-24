@@ -125,35 +125,39 @@ body {
 }
 
 .detail-box {
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    margin-left: 500px;
-    margin-right: 500px;
-    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 40%;
+    min-height: 400px;
+    margin: 40px auto;
     color: #011931;
     border-radius: 12px;
-    margin-top: 40px;
+    box-shadow: 0 8px 25px rgba(83, 83, 83, 0.2);
     animation: text-appear ease-in both;
-    transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out, box-shadow 0.2s ease;
     animation-timeline: view();
+
 
 
 }
 
 .detail-box:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 255, 255, 0.25);
 
 }
 
 .head {
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
     margin-bottom: 10px;
     font-size: 50px;
 }
 
 .about-me {
     font-family: serif;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 35px;
@@ -161,24 +165,32 @@ body {
 
 .about-me-list {
     font-family: serif;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 20px;
     font-size: 20px;
 }
 
 .small-image {
-    width: 30px;
-    height: 30px;
     gap: 7px;
     display: flex;
 }
 
-.small-image-gif {
-    margin-left: 20px;
+.small-image img {
     width: 30px;
     height: 30px;
-    gap: 7px;
-    display: flex;
+    object-fit: cover;
+}
+
+.small-image-gif {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.small-image-gif img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
 }
 
 
