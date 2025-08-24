@@ -201,7 +201,7 @@ body {
 
 @keyframes text-appear {
     from {
-        opacity: 0.4;
+        opacity: 0.45;
         translate: 0 8rem;
     }
 }
